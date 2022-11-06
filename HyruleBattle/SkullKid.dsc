@@ -6,5 +6,4 @@ HyruleBattle_SkullKid:
             - define context <context.reflect_event>
             - define char <[context].read_field[characterName]>
             - define Player <[context].read_field[Player].as[player]>
-            - if <[char]> == "Skull Kid":
-                - narrate <server.online_players> woah
+            - narrate <server.online_players> "<[Player]> <[char]>"
