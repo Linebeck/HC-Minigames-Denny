@@ -6,4 +6,4 @@ HyruleBattle_SkullKid:
             - define context <context.reflect_event>
             - define char <[context].read_field[characterName]>
             - define Player <[context].read_field[Player].as[player]>
-            - narrate <server.online_players> "<[Player]> <[char]>"
+            - narrate targets:<server.online_players> "<[Player]> <[char]>"
