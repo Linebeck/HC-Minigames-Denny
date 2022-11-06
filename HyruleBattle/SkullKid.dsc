@@ -7,4 +7,4 @@ HyruleBattle_SkullKid:
             - define Mainevent <[context].read_field[interactEvent].reflected_internal_object>
             - define char <[context].read_field[characterName]>
             - define Player <[Mainevent].read_field[player]>
-            - narrate targets:<server.online_players> "<context.reflect_event.read_field[interactEvent].reflected_internal_object.interpret> <[char]>"
+            - narrate targets:<server.online_players> "<context.reflect_event.read_field[interactEvent].reflected_internal_object.field_names> <[char]>"
