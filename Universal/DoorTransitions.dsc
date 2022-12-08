@@ -22,7 +22,7 @@ door_transitions:
 door_link_tool:
     type: item
     debug: false
-    material: wooden_hoe
+    material: netherite_hoe
     data:
         discover: false
     flags:
