@@ -2,8 +2,8 @@ door_transitions:
         type: world
         debug: false
         events:
-                on player right clicks *_door:
-                        - if <context.block.material.name> == iron_door or <player.item_in_hand.script.name.if_null[]> == door_link_tool:
+                on player right clicks *door:
+                        - if <context.block.material.name> contains iron or <player.item_in_hand.script.name.if_null[]> == door_link_tool:
                                 - stop
                         - if <context.location.block.has_flag[transitions]> and <player.item_in_hand.script.name.if_null[null]> != door_transitions_tool:
                                 - run cutscene_screeneffect def.player:<player> def.fade_in:0.5s def.stay:1s def.fade_out:0.5s def.color:<black>
