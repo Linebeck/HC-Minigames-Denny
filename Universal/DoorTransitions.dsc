@@ -9,7 +9,7 @@ door_transitions:
                                 - run cutscene_screeneffect def.player:<player> def.fade_in:0.5s def.stay:1s def.fade_out:0.5s def.color:<black>
                                 - wait 10t
                                 - switch <context.location>
-                                - teleport <player> <context.location.block.flag[transitions].center.below[1]>
+                                - teleport <player> <context.location.block.flag[transitions].center>
                 on player breaks block:
                     - if <context.location.block.has_flag[transitions]>:
                         - flag <context.location.block> transitions:!
